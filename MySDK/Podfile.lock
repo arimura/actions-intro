@@ -5,7 +5,7 @@ DEPENDENCIES:
   - AppLovinSDK (= 6.10.0)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://cdn.cocoapods.org/:
     - AppLovinSDK
 
 SPEC CHECKSUMS:
