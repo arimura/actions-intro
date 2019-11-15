@@ -1,0 +1,17 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+source 'https://cdn.cocoapods.org/'
+
+target 'MySDK' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for MySDK
+  pod 'AppLovinSDK', '6.10.0'
+
+  target 'MySDKTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
