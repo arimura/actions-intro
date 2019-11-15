@@ -11,4 +11,4 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: start testing
-      run: make test
+      run: make PLATFORM=gha test
