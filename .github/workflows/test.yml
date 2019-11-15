@@ -9,7 +9,8 @@ jobs:
   build:
     runs-on: macOS-latest
     steps:
-    - uses: actions/checkout@master
+    - name: pod install
+      run: make install
     - name: start testing
       run: make PLATFORM=gha test
-      
+
