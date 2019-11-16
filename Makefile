@@ -1,5 +1,7 @@
 PLATFORM="local"
 
+.PHONY: install test
+
 install:
 	pod install --project-directory=MySDK
 
