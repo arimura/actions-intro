@@ -6,6 +6,13 @@ on:
       - master
 
 jobs:
+  debug:
+    runs-on: macOS-latest
+    steps:
+    - name: ls 
+      run: ls -l /Applications
+    - name: xcode-select
+      run: xcode-select -p      
   build:
     runs-on: macOS-latest
     steps:
