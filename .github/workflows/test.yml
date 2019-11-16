@@ -24,7 +24,7 @@ jobs:
   build:
     runs-on: macOS-latest
     steps:
-    - uses: arimura/actions-intro@master
+    - uses: actions/checkout@v1
     - name: pod install
       run: make -C ${GITHUB_WORKSPACE} install
     - name: start testing
