@@ -17,6 +17,8 @@ jobs:
       run: ls -l
     - name: xcode-select
       run: xcode-select -p      
+    - name: env
+      run: env
   build:
     runs-on: macOS-latest
     steps:
