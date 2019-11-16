@@ -23,6 +23,7 @@ jobs:
       run: echo ${GITHUB_WORKSPACE}
   build:
     runs-on: macOS-latest
+    uses: arimura/actions-intro@master
     steps:
     - name: pod install
       run: make -C ${GITHUB_WORKSPACE} install
