@@ -9,8 +9,12 @@ jobs:
   debug:
     runs-on: macOS-latest
     steps:
-    - name: ls 
+    - name: ls -l /Applications
       run: ls -l /Applications
+    - name: pwd
+      run: pwd
+    - name: ls -l
+      run: ls -l
     - name: xcode-select
       run: xcode-select -p      
   build:
