@@ -19,7 +19,7 @@ jobs:
       run: xcode-select -p      
     - name: env
       run: env
-  　- name: echo
+    - name: echo
       run: echo ${GITHUB_WORKSPACE}
   build:
     runs-on: macOS-latest
