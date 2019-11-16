@@ -23,7 +23,7 @@ jobs:
     runs-on: macOS-latest
     steps:
     - name: pod install
-      run: make -d ${GITHUB_WORKSPACE} install
+      run: make -c ${GITHUB_WORKSPACE} install
     - name: start testing
-      run: make -d ${GITHUB_WORKSPACE} PLATFORM=gha test
+      run: make -c ${GITHUB_WORKSPACE} PLATFORM=gha test
 
