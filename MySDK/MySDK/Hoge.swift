@@ -16,3 +16,7 @@ class Hoge {
         NSLog("Hoge")
     }
 }
+
+struct test_hoge {
+    var text = "hello"
+}
