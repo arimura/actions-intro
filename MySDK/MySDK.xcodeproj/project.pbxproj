@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,9 @@
 		74C2A532237ECC2000F594D7 /* MySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74C2A528237ECC2000F594D7 /* MySDK.framework */; };
 		74C2A537237ECC2000F594D7 /* MySDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74C2A536237ECC2000F594D7 /* MySDKTests.m */; };
 		74C2A539237ECC2000F594D7 /* MySDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 74C2A52B237ECC2000F594D7 /* MySDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74C63ADF238273AE004C813D /* Hoge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C63ADE238273AE004C813D /* Hoge.swift */; };
+		74C63AE2238273FE004C813D /* Fuga.h in Headers */ = {isa = PBXBuildFile; fileRef = 74C63AE0238273FE004C813D /* Fuga.h */; };
+		74C63AE3238273FE004C813D /* Fuga.m in Sources */ = {isa = PBXBuildFile; fileRef = 74C63AE1238273FE004C813D /* Fuga.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +36,9 @@
 		74C2A531237ECC2000F594D7 /* MySDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74C2A536237ECC2000F594D7 /* MySDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySDKTests.m; sourceTree = "<group>"; };
 		74C2A538237ECC2000F594D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74C63ADE238273AE004C813D /* Hoge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hoge.swift; sourceTree = "<group>"; };
+		74C63AE0238273FE004C813D /* Fuga.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fuga.h; sourceTree = "<group>"; };
+		74C63AE1238273FE004C813D /* Fuga.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Fuga.m; sourceTree = "<group>"; };
 		B86E552A031B4AF80C958627 /* Pods-MySDKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySDKTests.release.xcconfig"; path = "Target Support Files/Pods-MySDKTests/Pods-MySDKTests.release.xcconfig"; sourceTree = "<group>"; };
 		DCC4D04CC37ADEBBFB6D4C89 /* Pods_MySDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MySDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E59456068F3C1B3CB5FF5F03 /* Pods-MySDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySDK.release.xcconfig"; path = "Target Support Files/Pods-MySDK/Pods-MySDK.release.xcconfig"; sourceTree = "<group>"; };
@@ -93,7 +99,10 @@
 			isa = PBXGroup;
 			children = (
 				74C2A52B237ECC2000F594D7 /* MySDK.h */,
+				74C63AE0238273FE004C813D /* Fuga.h */,
+				74C63AE1238273FE004C813D /* Fuga.m */,
 				74C2A52C237ECC2000F594D7 /* Info.plist */,
+				74C63ADE238273AE004C813D /* Hoge.swift */,
 			);
 			path = MySDK;
 			sourceTree = "<group>";
@@ -115,7 +124,6 @@
 				361A80936F9BC47DE20B217D /* Pods-MySDKTests.debug.xcconfig */,
 				B86E552A031B4AF80C958627 /* Pods-MySDKTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -127,6 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74C2A539237ECC2000F594D7 /* MySDK.h in Headers */,
+				74C63AE2238273FE004C813D /* Fuga.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,6 +192,7 @@
 				TargetAttributes = {
 					74C2A527237ECC2000F594D7 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 					74C2A530237ECC2000F594D7 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -293,6 +303,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74C63AE3238273FE004C813D /* Fuga.m in Sources */,
+				74C63ADF238273AE004C813D /* Hoge.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +449,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 65325C2289C53AA667C324EB /* Pods-MySDK.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -453,6 +467,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.hormiga5.MySDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -461,6 +477,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E59456068F3C1B3CB5FF5F03 /* Pods-MySDK.release.xcconfig */;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -477,6 +495,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.hormiga5.MySDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -485,6 +504,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 361A80936F9BC47DE20B217D /* Pods-MySDKTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MySDKTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -502,6 +522,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B86E552A031B4AF80C958627 /* Pods-MySDKTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MySDKTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
