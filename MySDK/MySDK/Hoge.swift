@@ -8,4 +8,10 @@
 
 import Foundation
 
+class Hoge {
 
+    func print(){
+        
+        NSLog("Hoge")
+    }
+}

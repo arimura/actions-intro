@@ -13,7 +13,7 @@
 		74C2A537237ECC2000F594D7 /* MySDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74C2A536237ECC2000F594D7 /* MySDKTests.m */; };
 		74C2A539237ECC2000F594D7 /* MySDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 74C2A52B237ECC2000F594D7 /* MySDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		74C63ADF238273AE004C813D /* Hoge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C63ADE238273AE004C813D /* Hoge.swift */; };
-		74C63AE2238273FE004C813D /* Fuga.h in Headers */ = {isa = PBXBuildFile; fileRef = 74C63AE0238273FE004C813D /* Fuga.h */; };
+		74C63AE2238273FE004C813D /* Fuga.h in Headers */ = {isa = PBXBuildFile; fileRef = 74C63AE0238273FE004C813D /* Fuga.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		74C63AE3238273FE004C813D /* Fuga.m in Sources */ = {isa = PBXBuildFile; fileRef = 74C63AE1238273FE004C813D /* Fuga.m */; };
 /* End PBXBuildFile section */
 
