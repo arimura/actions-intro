@@ -1,0 +1,11 @@
+name: manually re-running actions
+
+on: repository_dispatch
+
+jobs:
+  manual_deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout master
+      run: echo "OK"
+      
