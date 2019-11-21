@@ -4,6 +4,8 @@ on: pull_request
 
 jobs:
   objc-lint:
+    runs-on: macOS-latest
+    steps:
     - name: install 
       run: brew install clang-format
     - uses: actions/checkout@v1
