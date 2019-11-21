@@ -1,11 +1,11 @@
-name: SwiftLint
+name: CI
 
 on: pull_request
 
 jobs:
-  SwiftLint:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v1
-      - name: GitHub Action for SwiftLint
-        uses: norio-nomura/action-swiftlint@3.0.1
+  objc-lint:
+    - name: install 
+      run: brew install clang-format
+    - uses: actions/checkout@v1
+    - name: clang-format
+      run: ! find MySDK/MySDK  -name "*.m" | xargs clang-format -output-replacements-xml | grep "<replacement "
