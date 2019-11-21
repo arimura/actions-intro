@@ -9,14 +9,7 @@
 import Foundation
 
 class Hoge {
-
-    
-    func print(){
-        
+    func print() {
         NSLog("Hoge")
     }
-}
-
-struct test_hoge {
-    var text = "hello"
 }
