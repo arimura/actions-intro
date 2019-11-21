@@ -9,9 +9,7 @@
 import Foundation
 
 class Hoge {
-
-    func print(){
-        
+    func print() {
         NSLog("Hoge")
     }
 }

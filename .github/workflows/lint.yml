@@ -1,0 +1,17 @@
+name: lint
+
+on:
+  pull_request:
+    path:
+    - '**.h'
+    - '**.m'
+
+jobs:
+  objc-lint:
+    runs-on: macOS-latest
+    steps:
+    - name: install 
+      run: brew install clang-format
+    - uses: actions/checkout@v1
+    - name: clang-format
+      run: '! find MySDK/MySDK  -name "*.m" | xargs clang-format -output-replacements-xml | grep "<replacement "'
