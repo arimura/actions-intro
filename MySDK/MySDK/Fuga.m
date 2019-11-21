@@ -9,7 +9,7 @@
 #import "Fuga.h"
 
 @implementation Fuga
-- (void) print{
-    NSLog(@"Fuga");
+- (void)print {
+  NSLog(@"Fuga");
 }
 @end
