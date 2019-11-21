@@ -1,6 +1,10 @@
 name: lint
 
-on: pull_request
+on:
+  pull_request:
+    path:
+    - '**.h'
+    - '**.m'
 
 jobs:
   objc-lint:
