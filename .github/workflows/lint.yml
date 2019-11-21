@@ -1,4 +1,4 @@
-name: CI
+name: lint
 
 on: pull_request
 
@@ -10,4 +10,4 @@ jobs:
       run: brew install clang-format
     - uses: actions/checkout@v1
     - name: clang-format
-      run: ! find MySDK/MySDK  -name "*.m" | xargs clang-format -output-replacements-xml | grep "<replacement "
+      run: find MySDK/MySDK  -name "*.m" | xargs clang-format -output-replacements-xml | grep "<replacement "
