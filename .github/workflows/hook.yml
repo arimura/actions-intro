@@ -1,6 +1,8 @@
 name: manually re-running actions
 
-on: repository_dispatch
+on:
+  repository_dispatch:
+    types: [hoge]
 
 jobs:
   manual_deploy:
@@ -8,4 +10,4 @@ jobs:
     steps:
     - name: Checkout master
       run: echo "OK"
-      
+
