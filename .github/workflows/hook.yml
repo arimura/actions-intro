@@ -32,3 +32,11 @@ jobs:
         env:
           MATRIX_CONTEXT: ${{ toJson(matrix) }}
         run: echo "$MATRIX_CONTEXT"
+  create_pr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test
+        run:
+          - echo 1
+          - echo 2
+
