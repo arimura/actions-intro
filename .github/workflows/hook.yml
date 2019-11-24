@@ -35,8 +35,15 @@ jobs:
   create_pr:
     runs-on: ubuntu-latest
     steps:
-      - name: test
-        run:
-          - echo 1
-          - echo 2
-
+      - uses: actions/checkout@v1
+      - name: make file
+        run: echo hoge > "hoge.txt"
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: Hoge
+          title: Hoge
+          body: This is an auto-generated PR with dependency updates.
+          branch: hoge-patch
+          branch-suffix: none
