@@ -8,5 +8,6 @@ jobs:
     runs-on: macOS-latest
     steps:
     - name: line break
-      run: echo hoge && \
+      run: |
+        echo hoge && \
         echo fuga
