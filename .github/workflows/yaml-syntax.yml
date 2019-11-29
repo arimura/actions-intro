@@ -6,6 +6,8 @@ on:
 jobs:
   debug:
     runs-on: macOS-latest
+    env:
+      DEBUG: 1
     steps:
     - name: line break
       run: |
@@ -14,3 +16,6 @@ jobs:
     - name: check if
       if: true
       run: echo true
+    - name: check debug flag
+      if: ${{ DEBUG }} == 1
+      run: echo "DEBUG is 1"
