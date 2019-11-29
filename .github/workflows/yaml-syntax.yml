@@ -17,5 +17,5 @@ jobs:
       if: true
       run: echo true
     - name: check debug flag
-      if: ${{ env.DEBUG }} == 1
+      if: ${{ env.DEBUG }}
       run: echo "DEBUG is 1"
