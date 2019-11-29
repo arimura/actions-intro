@@ -11,3 +11,6 @@ jobs:
       run: |
         echo hoge && \
         echo fuga
+    - name: check if
+      if: true
+      run: echo true
