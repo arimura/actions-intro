@@ -26,3 +26,5 @@ DerivedData/
 
 ## Gcc Patch
 
+## Android Studio
+.gradle/
