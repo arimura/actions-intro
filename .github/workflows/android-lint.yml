@@ -19,3 +19,21 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew app:lint
       working-directory: AndroidApp
+    - name: Cache
+      uses: actions/cache@v1
+      with:
+        path: AndroidApp/app/build/reports/lint-results.xml
+        key: ${{ github.repository }}-${{ github.sha }}
+        restore-keys: ${{ github.repository }}-${{ github.sha }}
+  danger:
+    needs: android-lint
+    runs-on: ubuntu-latest
+    steps:
+    - name: Cache
+      uses: actions/cache@v1
+      with:
+        path: AndroidApp/app/build/reports/lint-results.xml
+        key: ${{ github.repository }}-${{ github.sha }}
+        restore-keys: ${{ github.repository }}-${{ github.sha }}
+    - name: echo
+      run: cat AndroidApp/app/build/reports/lint-results.xml
