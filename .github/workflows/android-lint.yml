@@ -19,7 +19,7 @@ jobs:
     - name: Cache
       uses: actions/cache@v1
       with:
-        path: AndroidApp/app/build/reports/lint-results.xml
+        path: AndroidApp/app/build/reports
         key: ${{ github.repository }}-${{ github.sha }}
         # restore-keys: ${{ github.repository }}-${{ github.sha }}
     - name: Build with Gradle
@@ -33,7 +33,7 @@ jobs:
     - name: Cache
       uses: actions/cache@v1
       with:
-        path: AndroidApp/app/build/reports/lint-results.xml
+        path: AndroidApp/app/build/reports
         key: ${{ github.repository }}-${{ github.sha }}
         restore-keys: ${{ github.repository }}-${{ github.sha }}
     - name: echo
