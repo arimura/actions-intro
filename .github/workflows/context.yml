@@ -1,0 +1,11 @@
+name: Check context 
+
+on: 
+  pull_request:
+
+jobs:
+  debug:
+    runs-on: ubuntu-latest
+    steps:
+    - name: context 
+      run: echo ${{ github.base_ref }} 
