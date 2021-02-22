@@ -8,4 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: context 
-      run: echo ${{ github.base_ref }} 
+      run: echo ${{ github.job }} 
+    - name: context 
+      run: echo ${{ github.run_id }} 
+
+
+
