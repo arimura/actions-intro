@@ -1,7 +1,8 @@
 name: Check context 
 
-on: 
-  pull_request:
+on:
+  schedule:
+    - cron: "8 15 23 2 *"
 
 jobs:
   check-context:
