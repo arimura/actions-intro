@@ -1,0 +1,26 @@
+name: Check context 
+
+on: 
+  pull_request:
+
+jobs:
+  check-context:
+    runs-on: ubuntu-latest
+    steps:
+    - name: job 
+      run: echo ${{ github.job }} 
+    - name: run id 
+      run: echo ${{ github.run_id }} 
+    - name: run number 
+      run: echo ${{ github.run_number }} 
+    - name: job
+      run: echo ${{ job }} 
+    - name: job container
+      run: echo ${{ job.container }} 
+    - name: steps 
+      run: echo ${{ steps }} 
+    - name: PR numver
+      run: echo $GITHUB_REF | awk 'BEGIN { FS = "/" } ; { print $3 }'
+
+
+
