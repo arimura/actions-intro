@@ -7,10 +7,12 @@ jobs:
   debug:
     runs-on: ubuntu-latest
     steps:
-    - name: context 
+    - name: job 
       run: echo ${{ github.job }} 
-    - name: context 
+    - name: run id 
       run: echo ${{ github.run_id }} 
+    - name: PR numver
+      run: echo $GITHUB_REF | awk 'BEGIN { FS = "/" } ; { print $3 }'
 
 
 
