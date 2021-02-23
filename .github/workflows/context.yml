@@ -13,8 +13,10 @@ jobs:
       run: echo ${{ github.run_id }} 
     - name: run number 
       run: echo ${{ github.run_number }} 
-    - name: job container 
-      run: echo ${{ job.container }} 
+    - name: job
+      run: echo ${{ job }} 
+    - name: steps 
+      run: echo ${{ steps }} 
     - name: PR numver
       run: echo $GITHUB_REF | awk 'BEGIN { FS = "/" } ; { print $3 }'
 
