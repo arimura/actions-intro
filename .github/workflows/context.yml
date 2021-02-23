@@ -4,7 +4,7 @@ on:
   pull_request:
 
 jobs:
-  debug:
+  check-context:
     runs-on: ubuntu-latest
     steps:
     - name: job 
@@ -13,6 +13,8 @@ jobs:
       run: echo ${{ github.run_id }} 
     - name: run number 
       run: echo ${{ github.run_number }} 
+    - name: job container 
+      run: echo ${{ job.container.id }} 
     - name: PR numver
       run: echo $GITHUB_REF | awk 'BEGIN { FS = "/" } ; { print $3 }'
 
