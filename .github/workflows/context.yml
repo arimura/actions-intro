@@ -11,6 +11,8 @@ jobs:
       run: echo ${{ github.job }} 
     - name: run id 
       run: echo ${{ github.run_id }} 
+    - name: run number 
+      run: echo ${{ github.run_number }} 
     - name: PR numver
       run: echo $GITHUB_REF | awk 'BEGIN { FS = "/" } ; { print $3 }'
 
