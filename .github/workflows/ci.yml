@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - '**'  # Runs on push to any branch
+  schedule:
+    - cron: '50 6 * * *'  # Runs daily at 06:50 UTC (15:50 JST)
 
 jobs:
   build:
