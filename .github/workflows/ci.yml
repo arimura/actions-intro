@@ -13,3 +13,5 @@ jobs:
         uses: actions/checkout@v4
       - name: check envs 
         run: make check 
+        env:
+          MY_SECRET: ${{ secrets.SECRET_HOGE }}
