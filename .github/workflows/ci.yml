@@ -14,4 +14,4 @@ jobs:
       - name: check envs 
         run: make check 
         env:
-          MY_SECRET: ${{ secrets.SECRET_HOGE }}
+          SECRET_HOGE: ${{ secrets.SECRET_HOGE }}
