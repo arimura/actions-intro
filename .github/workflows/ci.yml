@@ -15,3 +15,4 @@ jobs:
         run: make check 
         env:
           SECRET_HOGE: ${{ secrets.SECRET_HOGE }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
